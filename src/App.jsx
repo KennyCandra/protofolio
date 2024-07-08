@@ -1,10 +1,15 @@
 import './App.css'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
 
 function App() {
   return (
-    <>
-      <h1>Hello Ahmed</h1>
-    </>
+    <div className = "App">
+      <Header />
+      <div className='divider' />
+      {/* <Hero /> */}
+      <div className='divider' />
+    </div>
   )
 }
 

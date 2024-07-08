@@ -1,0 +1,111 @@
+header.flex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header ul{
+    gap: 20px;
+    list-style: none;
+    padding: 15px;
+    border-radius: 55px;
+    background-color: var(--bgHeader);
+}
+
+
+header ul li a {
+    text-decoration: none;
+    color: var(--title);
+    padding: 1rem 1rem;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    color: var(--blue);
+    transition: 0.2s;
+}
+
+header .small{
+    display: none;
+}
+
+header div.fixed{
+    inset: 0;
+    position: fixed;
+    background-color: rgb(40, 40, 48, 0.5);
+    z-index: 10;
+}
+
+header div.fixed ul.modal{
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    animation-name: modal;
+    animation-duration: 0.5s;
+}
+
+header div.fixed ul.modal li{
+    border-bottom: 1px solid var(--border);
+    padding: 1rem;
+}
+
+header div.fixed ul.modal li{
+    font-size: 1.1rem;
+}
+header div.fixed ul.modal li:last-child{
+    border-bottom: none;
+}
+
+header div.fixed ul.modal li:first-child{
+    text-align: right;
+    border: none;
+    padding: 0;
+    text-align: -webkit-right;
+}
+
+/* icons */
+
+button.close, button.menu, button.moon{
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    color: var(--subtitle);
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    transition: 0.2s;
+}
+
+
+
+button.close:hover, button.menu:hover, button.moon:hover{
+    cursor: pointer;
+    opacity: 1.1;
+    color: var(--title);
+    font-size: 1.1rem;
+}
+
+@keyframes modal {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    header ul.flex{
+        display: none;
+    }
+
+    .large{
+        display: none;
+    }
+
+    header .small{
+        display: block;
+    }
+}
