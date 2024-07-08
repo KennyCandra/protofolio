@@ -6,8 +6,7 @@ function App() {
   return (
     <div className = "App">
       <Header />
-      <div className='divider' />
-      {/* <Hero /> */}
+      <Hero />
       <div className='divider' />
     </div>
   )

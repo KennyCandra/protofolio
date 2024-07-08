@@ -14,6 +14,7 @@
 
   --icon-hover: #d4d4d8;
 
+  --container-padding : 3rem
 }
 
 html{
@@ -21,9 +22,14 @@ html{
   box-sizing: border-box;
 }
 
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}
+
 *{
   margin: 0;
   padding : 0
+
 }
 
 
@@ -39,11 +45,14 @@ body{
   width: 95%;
   margin: auto;
   background-color: var(--secondary);
+  padding: 3rem;
 }
 
 .divider{
   border-bottom: 1px solid var(--border);
   margin: 3rem 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding) );
+  margin-left: calc(var(--container-padding) * -1);
 }
 
 .flex {
@@ -60,4 +69,10 @@ button{
 
 button:active{
   scale: 0.9;
+}
+
+@media (max-width: 1000px) {
+  .App {
+    width: 98%;
+  }
 }
