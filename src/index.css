@@ -72,7 +72,7 @@ button:active{
 }
 
 @media (max-width: 1000px) {
-  .App {
-    width: 98%;
+  div.App {
+    width: 100%;
   }
 }
