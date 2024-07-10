@@ -34,10 +34,11 @@ header div.fixed{
     position: fixed;
     background-color: rgb(40, 40, 48, 0.5);
     z-index: 10;
+    backdrop-filter: blur(10px);
 }
 
 header div.fixed ul.modal{
-    width: 80%;
+    width: 90%;
     margin: 1rem auto;
     border-radius: 1rem;
     padding: 1rem 2rem;
