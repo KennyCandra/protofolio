@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <section
       className="contact flex"
-      style={{ justifyContent: "space-between" }}
+      style={{ justifyContent: "space-evenly" }}
     >
       <div>
         <h1 className="title flex">
@@ -59,15 +59,20 @@ const Contact = () => {
             </button>
             {state.succeeded && (
               <div className="flex">
-               <Lottie
-               animationData={doneAnimation}
-               loop={false}
-               style={{ width: "50px", height: "50px" , marginTop : "1rem" , marginRight : "1rem"}}
-               />
-              <h1 style={{ color: "white", marginTop: "1rem" }}>
-                Your Message has been Sent Succesfully
-              </h1>
-               </div>
+                <Lottie
+                  animationData={doneAnimation}
+                  loop={false}
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    marginTop: "1rem",
+                    marginRight: "1rem",
+                  }}
+                />
+                <h1 style={{ color: "white", marginTop: "1rem" }}>
+                  Your Message has been Sent Succesfully
+                </h1>
+              </div>
             )}
           </form>
         </div>
@@ -76,7 +81,7 @@ const Contact = () => {
         <Lottie
           animationData={contactUs}
           loop={true}
-          style={{ width: "1000px", height: "500px" }}
+          style={{ width: "500px", height: "500px" }}
         />
       </div>
     </section>

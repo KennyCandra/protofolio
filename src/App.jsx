@@ -8,21 +8,20 @@ import Main from "./components/Main/Main";
 import { GoMoveToTop } from "react-icons/go";
 
 function App() {
-  const [scrollIcon , setScrollIcon] = useState(false)
-
+  const [scrollIcon, setScrollIcon] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll" , () => {
-      if(window.scrollY > 300){
-        setScrollIcon(true)
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setScrollIcon(true);
       } else {
-        setScrollIcon(false)
+        setScrollIcon(false);
       }
-    })
-  })
+    });
+  });
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  };
   return (
     <div className="App">
       <Header id="up" />
@@ -32,7 +31,16 @@ function App() {
       <div className="divider" />
       <Contact />
       <div className="divider" />
-      <a onClick={scrollToTop} href="#up" style={scrollIcon ? {opacity: "1" , transition: "0.5s" } : {opacity: "0" , transition: "0.5s"} } className="scrollToUp">
+      <a
+        onClick={scrollToTop}
+        href="#up"
+        style={
+          scrollIcon
+            ? { opacity: "1", transition: "0.5s" }
+            : { opacity: "0", transition: "0.5s" }
+        }
+        className="scrollToUp"
+      >
         <GoMoveToTop className="scrollToUpIcon" />
       </a>
       <Footer />

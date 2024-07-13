@@ -18,6 +18,7 @@ const Main = () => {
     { ProjectTitle: "html", Category: ["html"] },
     { ProjectTitle: "js + react", Category: ["js", "react"] },
     { ProjectTitle: "react", Category: ["react"] },
+    { ProjectTitle: "react", Category: ["react"] },
   ];
   const [arr, setArr] = useState(myProjects);
 

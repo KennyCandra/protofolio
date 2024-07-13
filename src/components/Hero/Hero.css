@@ -1,42 +1,49 @@
-section.hero{
+section.hero {
     margin-top: 3rem;
 }
 
-section.hero div.left-section{
+section.hero div.left-section {
     flex-grow: 1;
 }
 
-section.hero div.avatar img{
+section.hero div.avatar img {
     width: 88px;
     border-radius: 50%;
     box-shadow: 2px 2px 40px 0 rgba(0, 0, 0);
     padding: 5px;
 }
 
-section.hero div.heading h1{
+section.hero div.heading h1 {
     color: var(--title);
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 5rem;
     margin: 24px 0;
 }
 
-section.hero div.description p{
+section.hero div.description p {
     color: var(--subtitle);
     font-size: 1.2rem;
     line-height: 2rem;
     margin: 32px 0;
 }
-section.hero div.icons{
+
+section.hero div.icons {
     gap: 1.3rem;
 }
 
 
-section.hero div.social-icons a{
+section.hero div.social-icons a {
     color: var(--subtitle);
     font-size: 1.3rem;
     cursor: pointer;
 }
 
-section.hero div.social-icons a:hover{
+section.hero div.social-icons a:hover {
     color: var(--title);
+}
+
+@media screen and (max-width: 1250px) {
+    .right-section{
+        display: none;
+    }
 }

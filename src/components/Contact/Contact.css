@@ -18,7 +18,7 @@ section .subtitle {
     margin: 2rem 0;
 }
 
-form.flex{
+form.flex {
     flex-direction: column;
     align-items: flex-start;
 }
@@ -44,7 +44,7 @@ section.contact #message {
     color: white;
 }
 
-section.contact #message{
+section.contact #message {
     min-height: 10rem;
 }
 
@@ -81,29 +81,35 @@ section div.Left-Side button:hover {
     border: 1px solid var(--blue);
 }
 
-@media (max-width: 600px) {
-    div.animation{
+@media (max-width: 1250px){
+    .animation {
         display: none;
     }
-    
-    section.contact #email,
-    section.contact #message{
-    width: 100%;
 }
 
-    div.box{
+@media (max-width: 600px) {
+    div.animation {
+        display: none;
+    }
+
+    section.contact #email,
+    section.contact #message {
+        width: 100%;
+    }
+
+    div.box {
         justify-content: center;
     }
 
-    form.flex div.flex{
+    form.flex div.flex {
         flex-direction: column;
     }
 
-    section.contact #email{
+    section.contact #email {
         margin-left: 0.5rem;
     }
 
-    section.contact button{
+    section.contact button {
         align-self: center;
     }
 
