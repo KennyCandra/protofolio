@@ -4,7 +4,7 @@ header.flex {
     padding: 1rem;
 }
 
-header ul{
+header ul {
     gap: 20px;
     list-style: none;
     padding: 15px;
@@ -25,11 +25,11 @@ header ul li a:hover {
     transition: 0.2s;
 }
 
-header .small{
+header .small {
     display: none;
 }
 
-header div.fixed{
+header div.fixed {
     inset: 0;
     position: fixed;
     background-color: rgb(40, 40, 48, 0.5);
@@ -37,7 +37,7 @@ header div.fixed{
     backdrop-filter: blur(10px);
 }
 
-header div.fixed ul.modal{
+header div.fixed ul.modal {
     width: 90%;
     margin: 1rem auto;
     border-radius: 1rem;
@@ -46,19 +46,20 @@ header div.fixed ul.modal{
     animation-duration: 0.5s;
 }
 
-header div.fixed ul.modal li{
+header div.fixed ul.modal li {
     border-bottom: 1px solid var(--border);
     padding: 1rem;
 }
 
-header div.fixed ul.modal li{
+header div.fixed ul.modal li {
     font-size: 1.1rem;
 }
-header div.fixed ul.modal li:last-child{
+
+header div.fixed ul.modal li:last-child {
     border-bottom: none;
 }
 
-header div.fixed ul.modal li:first-child{
+header div.fixed ul.modal li:first-child {
     text-align: right;
     border: none;
     padding: 0;
@@ -67,7 +68,9 @@ header div.fixed ul.modal li:first-child{
 
 /* icons */
 
-button.close, button.menu, button.moon{
+button.close,
+button.menu,
+button.moon {
     background-color: var(--bgHeader);
     height: 2.4rem;
     width: 2.4rem;
@@ -79,9 +82,16 @@ button.close, button.menu, button.moon{
     transition: 0.2s;
 }
 
+.light button.close,
+.light button.menu,
+.light button.moon {
+    border: 1px solid rgb(117, 117, 117);
+}
 
 
-button.close:hover, button.menu:hover, button.moon:hover{
+button.close:hover,
+button.menu:hover,
+button.moon:hover {
     cursor: pointer;
     opacity: 1.1;
     color: var(--title);
@@ -92,21 +102,22 @@ button.close:hover, button.menu:hover, button.moon:hover{
     0% {
         transform: scale(0);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
 @media (max-width: 768px) {
-    header ul.flex{
+    header ul.flex {
         display: none;
     }
 
-    .large{
+    .large {
         display: none;
     }
 
-    header .small{
+    header .small {
         display: block;
     }
 }

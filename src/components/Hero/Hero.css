@@ -16,7 +16,7 @@ section.hero div.avatar img{
 section.hero div.heading h1{
     color: var(--title);
     font-size: 4rem;
-    line-height: 3rem;
+    line-height: 5rem;
     margin: 24px 0;
 }
 

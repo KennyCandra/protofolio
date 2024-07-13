@@ -55,6 +55,13 @@ section.contact #message:hover {
     border: 1px solid rgb(45 212 191);
 }
 
+.light section.contact #email:focus,
+.light section.contact #message:focus,
+.light section.contact #email:hover,
+.light section.contact #message:hover {
+    border: 1px solid rgb(135, 86, 212);
+}
+
 section.contact button {
     background-color: rgba(36, 37, 46, 1);
     width: 11rem;
